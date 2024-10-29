@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASA Platform Skill dan Jasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a class="logo" href="home.html">
+        <img class="logo-image" src="logopasa.png" alt="Logo PASA">
+      </a>
+      <nav class="nav-menu">
+          <ul class="nav-list active">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Beranda</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="lowongan.html">Lowongan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cekperusahaan.html">Lihat Perusahaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang kami</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+    <content>
+        <div class="pencarian">
+            <form>
+            <input id="lowongan" type="search" name="cari" placeholder="Cari Lowongan" required>
+            <div class="dropdown">  
+              <input type="text" id="selectedLocation" placeholder="Cari Lokasi" readonly>  
+              <div class="dropdown-content" id="dropdownContent">  
+                  <div class="dropdown-item" onclick="selectLocation('Semua Lokasi')">Semua Lokasi</div>  
+                  <div class="dropdown-item" onclick="selectLocation('Aceh')">Aceh</div>  
+                  <div class="dropdown-item" onclick="selectLocation('Banda Aceh')">Banda Aceh</div>  
+                  <div class="dropdown-item" onclick="selectLocation('Langsa')">Langsa</div>  
+                  <div class="dropdown-item" onclick="selectLocation('Bali')">Bali</div>  
+                  <div class="dropdown-item" onclick="selectLocation('Badung')">Badung</div>  
+              </div>  
+            </div>  
+            <button class="mencari" type="button" name="mencari">CARI</button>
+            </form>
+        </div>
+        <script class="script.js"></script>
+        <div class="loker">
+            <div class="loker1">
+                <div class="flex-loker">
+                    <img src="images.jpeg" alt="gambar loker">
+                    <p><span>PixelCraft Studios</span><br><br> Perusahaan game development fokus pada game indie. Lowongan: Game Programmer (Rp 10 - 15 juta), 3D Artist (Rp 8 - 12 juta) </p>
+                </div>
+                <div class="flex-loker">
+                    <img src="images.jpeg" alt="gambar loker">
+                    <p><span>TrendLoom Inc</span><br><br> Perusahaan teknologi fashion berbasis AI. Lowongan: Fashion Analyst (Rp 9 - 14 juta), Web Developer (Rp 10 - 15 juta) </p>
+                </div>
+                <div class="flex-loker">
+                    <img src="images.jpeg" alt="gambar loker">
+                    <p><span>AeroMedia Interactive</span><br><br> Perusahaan produksi konten video dan animasi. Lowongan: Motion Graphic Designer (Rp 7 - 11 juta), Video Editor (Rp 8 - 13 juta) </p>
+                </div>
+                <div class="flex-loker">
+                    <img src="images.jpeg" alt="gambar loker">
+                    <p><span>ByteBridge Solutions</span> Perusahaan IT yang fokus pada aplikasi cloud dan big data. Lowongan: Cloud Engineer (Rp 12 - 18 juta), Data Scientist (Rp 14 - 20 juta) </p>
+                </div>
+                <div class="flex-loker">
+                    <img src="images.jpeg" alt="gambar loker">
+                    <p><span>EvoGreen Technologies</span> Startup teknologi ramah lingkungan. Lowongan: Environmental Engineer (Rp 9 - 14 juta), Product Designer (Rp 10 - 16 juta) </p>
+                </div>
+                <div class="flex-loker">
+                    <img src="images.jpeg" alt="gambar loker">
+                    <p><span>VividFrame Studios</span> Perusahaan produksi film animasi dan game. Lowongan: 3D Animator (Rp 8 - 13 juta), Concept Artist (Rp 7 - 11 juta) </p>
+                </div>
+            </div>
+        </div>
+    </content>
+
+</body>
